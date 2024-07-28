@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bootstrap 5 Blog Layout</title>
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-
-<body>
-	<header>
+export default function PostList() {
+    return <>
+        <header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
 				<a class="navbar-brand" href="#">My Blog</a>
@@ -42,7 +31,6 @@
 	<main>
 		<div class="container mt-4">
 			<div class="row">
-				<!-- Main Content -->
 				<div class="col-lg-8">
 					<h1 class="mb-4">Latest Posts</h1>
 
@@ -50,7 +38,7 @@
 						<div class="row">
 							<div class="col-sm-12 col-md-3">
 								<img class="img-fluid h-100 card-img-top" src="https://via.placeholder.com/800x400"
-									 alt="...">
+									 alt="..." />
 							</div>
 							<div class="card-body col-md-8">
 								<h5 class="card-title">Post Title 1</h5>
@@ -65,7 +53,7 @@
 						<div class="row">
 							<div class="col-sm-12 col-md-3">
 								<img class="img-fluid h-100 card-img-top" src="https://via.placeholder.com/800x400"
-									 alt="...">
+									 alt="..." />
 							</div>
 							<div class="card-body col-md-8">
 								<h5 class="card-title">Post Title 2</h5>
@@ -77,7 +65,6 @@
 					</div>
 
 				</div>
-				<!-- Sidebar -->
 				<div class="col-lg-4">
 					<div class="card mb-4">
 						<div class="card-body">
@@ -98,6 +85,7 @@
 					</div>
 				</div>
 			</div>
+        </div>
 	</main>
 
 	<footer class="bg-dark text-white text-center py-3 fixed-bottom">
@@ -105,10 +93,5 @@
 			<p>&copy; 2024 My Blog. All rights reserved.</p>
 		</div>
 	</footer>
-
-	<!-- Bootstrap JS and dependencies (Popper.js) -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+    </>
+}
